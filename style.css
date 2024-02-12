@@ -1,0 +1,473 @@
+/*primera parte*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+* P{
+    color: #ffffff;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: background-color 0.5s ease;
+    
+}
+
+.logo{
+    position: relative;
+    font-size: 40px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 100px;
+    margin-top: 35px;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+
+}
+
+body{
+    color: fixed;
+    background-color:#040014;
+}
+
+
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 50vh;
+    color: #fffefe;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    font-size: 20px;
+
+}
+
+.content-home h1{
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+font-size: 40px;
+}
+
+.content-home p{
+    font-size: 20px;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+}
+
+
+.main-content {
+    padding-top: 100px;
+    margin-bottom: 100px;
+     /* Altura del navbar */
+}
+
+
+
+.navbar{
+    color: #fffefe;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 100px;
+    transition: .5s;
+    font-size: 25px;
+    margin-top: 35px;
+    margin-bottom: 100px;
+
+}
+
+
+.navbar a:hover{
+    color: #0ef;
+}
+.navbar a {
+    color: white;
+    text-decoration: none; 
+    margin-left: 50px;
+
+    /* animacion*/
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--1));
+    transition: .5s ease;
+}
+
+.contenedoirimg-1{
+    width: 100%;
+    margin-top: 400px;
+}
+
+.contenedoirimg-1 img{
+    width: 400px;
+    float: right;
+    ;
+}
+
+.content-home{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 400px;
+}
+
+
+.content-home span{
+    color: #0ef;
+}
+
+.content-home h3:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slidetop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.content-home h3{
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.iconos a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background: transparent;
+    font-size: 30px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 60px 15px 60px 0px;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: calc(.2s * var(--1));
+    transition: .5s ease;
+
+    
+}
+
+.iconos a:hover{
+    
+    color: #011016;
+
+}
+
+.btn{
+    display: inline-block;
+    padding: 20px;
+    padding-top: 30px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 20px;
+    margin-right: 250px;
+    color: #080808;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 300px;
+    flex-direction: row;
+    align-items: center;
+
+    /*esta parte del codigo es para posicionarlo*/
+    position:absolute;
+    bottom: 50;
+    left: 30%;
+    transform: translateX(-50%);
+
+    /*esto es para animarlo*/
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
+}
+
+
+
+.btn:hover{
+    box-shadow: 0 0 5px cyan, 
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+
+
+
+/*segunda parte*/
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+    
+
+}
+.move-down { margin-top: 200px; }
+
+.about-img img{
+    padding-bottom: 20%;
+    max-width: 400px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 400px;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.about-tex h2{
+    margin-top: 200px;
+    font-size: 30px;
+    color: #ffffff;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    
+}
+
+.about-tex h2 span{
+    color: #0ef;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+
+}
+
+.about-tex h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+
+.about-tex p{
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.about-tex ol{
+    font-size: 20px;
+    line-height: 1.4;
+    color: #fffefe;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+
+.contenedor-lenguajes{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+.contenedor-lenguajes h2{
+    padding-right: 5px;
+}
+
+
+/*tercera parte portafolio*/
+
+
+
+.about-iframe{
+    display: grid;
+    grid-template-columns: repeat(1);
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+
+.about-iframe  iframe {
+    margin-left: 150px;
+    width: 1000px;
+    height: 600px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+
+}
+
+.about-iframe p{
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+
+}
+
+.about-iframe h2{
+    margin-top: 250px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+}
+
+
+
+/*4ta parte contacto*/
+
+.contacto{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+}
+
+.contacto-tex h2{
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+
+}
+
+.contacto-tex h2 span{
+    color:#0ef;
+    opacity: 0;
+    animation: slideRight 5s ease forwards;
+}
+
+
+.contacto-tex h2{
+    color: #fffefe  ;
+    
+}
+.contacto-tex p{
+    color: #fffefe;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+}
+
+.lista-datosPersonales{
+margin-bottom: 1rem;
+}
+
+.lista-datosPersonales li{
+    margin-bottom: 5px;
+    display: block;
+}
+
+
+.lista-datosPersonales i{
+    display: inline-block;
+    color: #0ef;
+    font-size: 20px;
+    font-weight: 600;
+    gap:  10px;
+    transition: all .40s ease;
+    
+}
+
+.lista-datosPersonales li a:hover{
+    transform: scale(1.01); translate:(-5px) ;
+    color: #0ef;
+}
+
+.formulario-de-contacto form{
+    position: relative;
+}
+
+
+.formulario-de-contacto form input,form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: #555557;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+
+}
+
+.formulario-de-contacto form textarea{
+    resize: none;
+    height: 220px;
+
+}
+
+.formulario-de-contacto form .send{
+    display: inline-block;
+    padding: 14px 60px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef
+}
+
+.formulario-de-contacto form .send:hover{
+    box-shadow: 0 0 5px cyan, 
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+
+}
+
+.iconos-contacto a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background: transparent;
+    font-size: 60px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 20px 15px 20px 0px;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: calc(.2s * var(--1));
+    transition: .5s ease;
+
+    
+}
+
+.iconos-contacto a:hover{
+    
+    color: #011016;
+
+}
+
+
+@keyframes slideRight {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1;}
+}
+
+@keyframes slideTop {
+    0% { transform: translateY(100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1;}
+}
+
+@keyframes slideBottom {
+    0% { transform: translateY(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1;}
+}
+
